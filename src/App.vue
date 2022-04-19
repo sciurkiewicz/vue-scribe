@@ -102,12 +102,11 @@
       </v-container>
     </v-main>
   </v-app>
-</template>
+  </template>
 
 <script>
-// import Notes from './components/Notes.vue'
-import Todo from './components/Todo.vue'
-// import Calendar from './components/Calendar.vue'
+  import Todo from './components/Todo.vue'
+  // import Calendar from './components/Calendar.vue'
 
 
   export default {

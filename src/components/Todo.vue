@@ -47,7 +47,7 @@
                 <v-list-item-content>
                   <v-text-field
                     v-model="message"
-                    label="E-mail"
+                    label="Treść"
                     required
                   ></v-text-field>
                   <v-btn block color="primary" @click="addTodo">
