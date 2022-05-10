@@ -6,7 +6,6 @@
 
       <v-toolbar-title>Application</v-toolbar-title>
     </v-app-bar>
-
       <v-sheet>
     <!-- <v-container class="fill-height">
       <v-row
@@ -59,6 +58,7 @@
             </v-list-item-content>
           </v-list-item>
 
+          <router-link to="/todo">
           <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-check</v-icon>
@@ -67,7 +67,9 @@
               <v-list-item-title>Lista To-Do</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+          </router-link>
 
+          <router-link to="/calendar">
           <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-calendar</v-icon>
@@ -76,6 +78,7 @@
               <v-list-item-title>Kalendarz</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+          </router-link>
 
           <v-list-item>
             <v-list-item-icon>
@@ -97,7 +100,7 @@
           <!-- elevation="8" -->
           <!-- outlined> -->
              <!-- <div v-if="main.view===1"><Notes/></div> -->
-        <Todo/>
+             <router-view />
         <!-- </v-card> -->
       </v-container>
     </v-main>
@@ -105,7 +108,7 @@
   </template>
 
 <script>
-  import Todo from './components/Todo.vue'
+  // import Todo from './views/Todo.vue'
   // import Calendar from './components/Calendar.vue'
 
 
@@ -116,7 +119,7 @@
         },
       components: {
     // Notes,
-    Todo,
+    // Todo,
     // Calendar,
     },
     data: () => ({
